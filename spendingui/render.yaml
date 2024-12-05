@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: spending-tracker-ui
+    env: static
+    staticPublishPath: build
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
